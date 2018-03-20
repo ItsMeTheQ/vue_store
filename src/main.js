@@ -8,6 +8,7 @@ import Vuetify from '../node_modules/vuetify'
 import 'vuetify/dist/vuetify.min.css'
 
 import store from './vue_store/index'
+
 Vue.use(store)
 
 console.log(store)
@@ -29,6 +30,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  store,
   components: {App},
   template: '<App/>'
 })
