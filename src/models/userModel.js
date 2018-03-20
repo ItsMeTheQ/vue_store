@@ -1,4 +1,4 @@
-const userModel = {
+export default {
   endpoint: 'user-api',
   name: 'userModel',
   varSchema: {

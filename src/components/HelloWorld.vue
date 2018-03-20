@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import {mapGetters} from 'vuex'
 
 export default {
   data() {
@@ -18,14 +18,11 @@ export default {
   },
   methods: {
     testState() {
-      console.log(this.$store.getters.userModel)
+      console.log(this.$store)
     },
     createRecord() {
       // console.log(store.dispatch('createRecord'))
-      this.$store.commit('createRecord', {
-        model: 'userModel',
-        values: {firstName: 'Sebastian', lastName: 'Benda'}
-      })
+      console.log(this)
     },
     add() {
       store.commit('increment', 2)

@@ -7,14 +7,10 @@ import Vuetify from '../node_modules/vuetify'
 
 import 'vuetify/dist/vuetify.min.css'
 
-import { store } from './store/store'
-import loader from './store/plugin/modules/loader'
+import store from './vue_store/index'
+Vue.use(store)
 
-//import models here
-import {userModel} from './store/plugin/models/index'
-
-const modelList = {'userModel': userModel}
-loader.addWholeFunctionality(store, modelList)
+console.log(store)
 
 Vue.use(Vuetify, {
   theme: {
@@ -32,7 +28,6 @@ Vue.config.productionTip = false
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  store,
   router,
   components: {App},
   template: '<App/>'

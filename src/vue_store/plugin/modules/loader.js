@@ -33,15 +33,5 @@ export default {
       store.state[modelList[key].name] = []
       store.state[(modelList[key].name + '_')] = []
     }
-  },
-
-  /* addAllGetters(store, state, modelList) {
-    let obj = {}
-    for (let key in modelList) {
-      obj[modelList[key].name] = function (state) {
-        return state
-      }
-      return obj
-    }
-  } */
+  }
 }
